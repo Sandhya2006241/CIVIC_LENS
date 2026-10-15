@@ -1,0 +1,68 @@
+{
+  "dataset": "ClaimLens synthetic evidence-pair benchmark",
+  "samples": 480,
+  "train_samples": 360,
+  "test_samples": 120,
+  "seed": 42,
+  "model": "TF-IDF (1-2 grams) + class-weighted Logistic Regression",
+  "labels": [
+    "Supported",
+    "Contradicted",
+    "Insufficient evidence"
+  ],
+  "accuracy": 1.0,
+  "macro_f1": 1.0,
+  "baseline_accuracy": 0.3333,
+  "baseline_macro_f1": 0.1667,
+  "confusion_matrix": [
+    [
+      40,
+      0,
+      0
+    ],
+    [
+      0,
+      40,
+      0
+    ],
+    [
+      0,
+      0,
+      40
+    ]
+  ],
+  "classification_report": {
+    "Supported": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1-score": 1.0,
+      "support": 40.0
+    },
+    "Contradicted": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1-score": 1.0,
+      "support": 40.0
+    },
+    "Insufficient evidence": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1-score": 1.0,
+      "support": 40.0
+    },
+    "accuracy": 1.0,
+    "macro avg": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1-score": 1.0,
+      "support": 120.0
+    },
+    "weighted avg": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1-score": 1.0,
+      "support": 120.0
+    }
+  },
+  "caveat": "Synthetic benchmark only; not a real-world performance estimate."
+}

@@ -1,0 +1,15 @@
+services:
+  api:
+    build: ./backend
+    ports:
+      - "8000:8000"
+    volumes:
+      - claimlens_uploads:/app/data/uploads
+  web:
+    build: ./frontend
+    ports:
+      - "5173:80"
+    depends_on:
+      - api
+volumes:
+  claimlens_uploads:
